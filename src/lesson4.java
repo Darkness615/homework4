@@ -5,7 +5,9 @@ public class lesson4
 {
     public static void main (String [] args)
     {
-        start(3);
+        /* getField(3);
+        System.out.println();*/
+       start(3);
     }
 
         static void start (int size)
@@ -20,8 +22,8 @@ public class lesson4
 
                 break;
             }
+            drawField(field);
 
-            System.out.println();
 
             handleAIMove(field);
             draw(field);
@@ -31,6 +33,7 @@ public class lesson4
 
                 break;
             }
+            drawField(field);
         } while (true);
 
 
@@ -55,13 +58,14 @@ public class lesson4
     }
 
 
+
     static void drawField(char[][] field)
     {
         for (int i = 0; i < field.length; i++)
         {
             for (int j = 0; j < field[i].length; ++j)
             {
-                System.out.println(field[i][j]);
+                System.out.print(field[i][j]);
             }
         System.out.println();
         }
@@ -212,3 +216,4 @@ public class lesson4
   }
 
 }
+
