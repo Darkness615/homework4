@@ -5,8 +5,7 @@ public class lesson4
 {
     public static void main (String [] args)
     {
-        /* getField(3);
-        System.out.println();*/
+        
        start(3);
     }
 
